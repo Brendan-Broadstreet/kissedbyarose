@@ -121,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "kissedbyarose"
+  "defaultProject": "kissedbyarose",
+  "cli": {
+    "analytics": false
+  }
 }
