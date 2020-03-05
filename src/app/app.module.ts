@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
 import { SealComponent } from './seal/seal.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SealComponent } from './seal/seal.component';
     AboutComponent,
     ProductsComponent,
     HomeComponent,
-    SealComponent
+    SealComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
