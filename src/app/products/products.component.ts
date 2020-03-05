@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PLANTS } from '../mock-plants';
+import { Plant } from '../plant';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -10,13 +10,17 @@ import { ProductService } from '../product.service';
 export class ProductsComponent implements OnInit {
   product: any;
   // tslint:disable-next-line:max-line-length
-  
-  image = 'https://source.unsplash.com/312x234/?greenhouse,rose,bright' ;
-  
+
+  image = 'https://source.unsplash.com/312x234/?greenhouse,rose,bright';
+
   constructor(private productService: ProductService) { }
+
+  Product: Plant[];
+  sessionToken: string;
 
   ngOnInit(): void {
     this.getPlants();
+    this.sessionToken = localStorage.getItem('token');
   }
 
   getPlants(): void {
@@ -24,5 +28,8 @@ export class ProductsComponent implements OnInit {
       .subscribe(plants => this.product = plants);
   }
 
+  delete(id: number): void {
+    this.productService.deleteProduct(id).subscribe((response) => { this.ngOnInit(); });
+  }
 
 }
