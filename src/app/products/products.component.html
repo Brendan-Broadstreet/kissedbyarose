@@ -1,1 +1,58 @@
-<p>products works!</p>
+<section class="hero is-danger is-light" id="prodHero">
+  <div class="hero-body">
+
+    <h1 class="title" id="prodTitle">
+      Products
+    </h1>
+    <br />
+    <h2 class="subtitle">
+      <B>Our top 100 Products.</B>
+      <br />
+      <br />
+      Please call:  
+      <a href="tel:855-925-1150">855-925-1150</a> for pricing and availability
+    </h2>
+
+  </div>
+</section>
+
+<div class="section">
+  <div class="container ">
+    <!-- <div class="columns">
+    <div class="column"> -->
+    <div class="card " *ngFor='let plant of product' id="prodCard">
+      <div class="card-image is-hovered">
+        <figure class="image is-4by3">
+          <img src={{image}}{{plant.product_name}} id="prodImage" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src='../../assets/Rounded_Rose.png' alt="Plant image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4">{{plant.product_name}}</p>
+            <p class="subtitle is-6">Available at Kissed by a Rose Gardens</p>
+          </div>
+        </div>
+
+        <div class="content">
+           <b>{{plant.product_name}}</b> is a great choice!! Everyone loves the way this plant looks. When you buy it you will be super happy.
+           <p>Your mom will be proud of you for choosing <b>{{plant.product_name}}</b>!!</p>
+           <br />
+           <br />
+           <a>Catergory</a>
+           <br />
+          <a href="#">Species Gallery</a> 
+          <br />
+          <a href="tel:855-925-1150">Call now</a>
+        </div>
+        <button *ngIf='sessionToken' (click)='delete(product.id)'>x</button><br /><br />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->

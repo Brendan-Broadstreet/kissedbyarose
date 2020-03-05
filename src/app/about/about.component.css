@@ -1,0 +1,20 @@
+#tOne{
+    background: rgb(227,102,119);
+    background: linear-gradient(90deg, rgba(227,102,119,1) 6%, rgba(238,174,202,1) 100%);
+}
+
+#tTwo{
+    background: rgb(227,102,119);
+    background: linear-gradient(90deg, rgba(227,102,119,1) 6%, rgba(238,174,202,1) 100%);
+}
+
+#tThree{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 6%, rgba(227,102,119,1) 100%);
+}
+
+p{
+    color: aliceblue;
+    font-weight: 700;
+    text-shadow: 1px 4px 20px rgba(79, 0, 0, 0.55);
+}
