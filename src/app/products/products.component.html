@@ -8,7 +8,9 @@
     <h2 class="subtitle">
       <B>Our top 100 Products.</B>
       <br />
-      Please call: <B>855.925.1150</B> for pricing and availability
+      <br />
+      Please call:  
+      <a href="tel:855-925-1150">855-925-1150</a> for pricing and availability
     </h2>
 
   </div>
@@ -38,9 +40,15 @@
         </div>
 
         <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>Catergory</a>.
-          <a href="#">Species Gallery</a> <a href="#">Call</a>
+           <b>{{plant.product_name}}</b> is a great choice!! Everyone loves the way this plant looks. When you buy it you will be super happy.
+           <p>Your mom will be proud of you for choosing <b>{{plant.product_name}}</b>!!</p>
+           <br />
+           <br />
+           <a>Catergory</a>
+           <br />
+          <a href="#">Species Gallery</a> 
+          <br />
+          <a href="tel:855-925-1150">Call now</a>
         </div>
         <button *ngIf='sessionToken' (click)='delete(product.id)'>x</button><br /><br />
       </div>
